@@ -2,6 +2,8 @@
 
 {% block content %}
 
+{% load i18n %}
+
 <main class="p-5">
   <div class="md:flex md:items-center md:justify-start">
     <div class="pl-24 pt-5 pb-10">
@@ -16,8 +18,8 @@
           <div class="ml-3">
             <form action="{% url 'account:login' %}" method="post">
               <p class="text-blue-700">
-                Welcome, <span class="font-bold">{{ new_user.username }}</span>.<br>
-                Your account has been successfully created. Now you can <a href="{% url 'account:login' %}" class="text-blue-700 font-bold underline hover:text-blue-600">log in</a>.
+                {% trans "Welcome" %}, <span class="font-bold">{{ new_user.username }}</span>.<br>
+                {% trans "Your account has been successfully created. Now you can " %}<a href="{% url 'account:login' %}" class="text-blue-700 font-bold underline hover:text-blue-600">{% trans "log in" %}</a>.
               </p>
             </form>
           </div>
