@@ -171,3 +171,6 @@ CSRF_TRUSTED_ORIGINS = [
 SESSION_COOKIE_SECURE = True  # Передавать куки только по HTTPS
 CSRF_COOKIE_SECURE = True     # Передавать CSRF-токен только по HTTPS
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# Увеличьте лимит для загрузки файлов (например, до 50 МБ)
+FILE_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024  # 50 МБ
+DATA_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024  # 50 МБ
