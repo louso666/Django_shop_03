@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-h&n%v2wl7%34scud^((yfgqdo=9+w+c@bffqe)%=2u+a_5-hza'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -163,3 +163,11 @@ LANGUAGES = [
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://saplings.pro',  # Ваш домен
+    'https://www.saplings.pro',  # Если используется www
+]
+SESSION_COOKIE_SECURE = True  # Передавать куки только по HTTPS
+CSRF_COOKIE_SECURE = True     # Передавать CSRF-токен только по HTTPS
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
