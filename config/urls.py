@@ -5,11 +5,11 @@ from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
-  path('admin/', admin.site.urls),
-  path('account/', include('account.urls', namespace='account')),
-  path('cart/', include('cart.urls', namespace='cart')),
-  path('orders/', include('orders.urls', namespace='orders')),
-  path('', include('store.urls', namespace='store')),
+ # path('admin/', admin.site.urls),
+ # path('account/', include('account.urls', namespace='account')),
+ #path('cart/', include('cart.urls', namespace='cart')),
+ # path('orders/', include('orders.urls', namespace='orders')),
+ # path('', include('store.urls', namespace='store')),
   path('i18n/', include('django.conf.urls.i18n')),  # Для смены языка
 ]
 
