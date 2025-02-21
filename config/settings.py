@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     # 3rd party
     'crispy_forms',
     'crispy_tailwind',
+    'django_resized',
 
     # Local
     'account',
