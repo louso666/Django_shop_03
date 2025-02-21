@@ -30,7 +30,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_tailwind',
     'django_resized',
-    'ckeditor',
+    'django_ckeditor_5',
 
     # Local
     'account',
@@ -177,3 +177,9 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Увеличьте лимит для загрузки файлов (например, до 50 МБ)
 FILE_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024  # 50 МБ
 DATA_UPLOAD_MAX_MEMORY_SIZE = 50 * 1024 * 1024  # 50 МБ
+
+CKEDITOR_5_CONFIGS = {
+    'default': {
+        'toolbar': ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote'],
+    },
+}
