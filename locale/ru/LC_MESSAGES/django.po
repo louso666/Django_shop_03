@@ -21,43 +21,43 @@ msgstr ""
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 #: templates/account/profile.html:9
 msgid "Profile"
-msgstr ""
+msgstr "Профиль"
 
 #: templates/account/profile.html:15
 msgid "My Orders"
-msgstr ""
+msgstr "Заказы"
 
 #: templates/account/profile.html:19
-msgid "Order Number"
+msgid "Номер заказа"
 msgstr ""
 
 #: templates/account/profile.html:20
-msgid "Order Date"
+msgid "Дата Заказа"
 msgstr ""
 
 #: templates/account/profile.html:44
-msgid "User Profile"
+msgid "Профиль"
 msgstr ""
 
 #: templates/account/profile.html:47
 msgid "Name:"
-msgstr ""
+msgstr "Имя:"
 
 #: templates/account/profile.html:51
 msgid "Email:"
-msgstr ""
+msgstr "Email:"
 
 #: templates/account/profile.html:55
 msgid "Created:"
-msgstr ""
+msgstr "Создан:"
 
 #: templates/account/profile.html:59
 msgid "Is admin:"
-msgstr ""
+msgstr "Админ"
 
 #: templates/account/register.html:14 templates/account/register.html:25
 msgid "Create an account"
-msgstr ""
+msgstr "Создать учетную запись"
 
 #: templates/account/register.html:17
 msgid "sign in"
@@ -65,16 +65,16 @@ msgstr ""
 
 #: templates/account/register.html:18
 msgid "if you already have an account"
-msgstr ""
+msgstr "войти"
 
 #: templates/account/register_done.html:21
 msgid "Welcome"
-msgstr ""
+msgstr "Привет"
 
 #: templates/account/register_done.html:22
 msgid "Your account has been successfully created. Now you can "
-msgstr ""
+msgstr "Ваша учетная запись успешно создана. Теперь вы можете"
 
 #: templates/account/register_done.html:22
 msgid "log in"
-msgstr ""
+msgstr "войти"
