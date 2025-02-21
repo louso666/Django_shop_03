@@ -30,12 +30,14 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_tailwind',
     'django_resized',
+    'ckeditor',
 
     # Local
     'account',
     'store',
     'cart',
     'orders',
+    'blog',
 ]
 
 MIDDLEWARE = [

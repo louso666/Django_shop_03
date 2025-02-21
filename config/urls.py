@@ -19,6 +19,7 @@ urlpatterns += i18n_patterns(
   path('cart/', include('cart.urls', namespace='cart')),
   path('orders/', include('orders.urls', namespace='orders')),
   path('', include('store.urls', namespace='store')),
+  path('blog/', include('blog.urls')),
 #path('', include('store.urls')),  # Ваши основные URL
 )
 
