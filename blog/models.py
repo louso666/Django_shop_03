@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from django_ckeditor_5.fields import RichTextField
+from django_ckeditor_5.fields import CKEditor5Field
 
 class BlogCategory(models.Model):
     name = models.CharField(max_length=200, verbose_name='Название категории')
