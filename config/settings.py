@@ -43,6 +43,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.locale.LocaleMiddleware',  # Middleware для обработки языка
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -59,6 +60,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',  # Добавляет переменную LANGUAGE_CODE в шаблоны
                 'cart.context_processors.cart',
                 'store.context_processors.categories',
             ],
@@ -147,3 +149,12 @@ CART_SESSION_ID = 'cart'
 LOGIN_URL = 'account:login'
 LOGOUT_URL = 'logout'
 LOGIN_REDIRECT_URL = '/'
+LANGUAGE_CODE = 'ru'
+LANGUAGES = [
+    ('en', 'English'),
+    ('ru', 'Russian'),
+    # Добавьте другие языки по необходимости
+]
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+]
