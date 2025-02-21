@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from ckeditor.fields import RichTextField
+from django_ckeditor_5.fields import RichTextField
 
 class BlogCategory(models.Model):
     name = models.CharField(max_length=200, verbose_name='Название категории')
@@ -34,7 +34,7 @@ class BlogPost(models.Model):
     slug = models.SlugField(max_length=200, unique=True, verbose_name='Слаг')
     category = models.ForeignKey(BlogCategory, on_delete=models.CASCADE, related_name='posts', verbose_name='Категория')
     tags = models.ManyToManyField(BlogTag, related_name='posts', verbose_name='Теги')
-    content = RichTextField(verbose_name='Содержание')
+    content = CKEditor5Field(verbose_name='Содержание')
     image = models.ImageField(upload_to='blog/images/', blank=True, null=True, verbose_name='Изображение')
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft', verbose_name='Статус')
     date_created = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
