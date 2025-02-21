@@ -1,0 +1,12 @@
+[Unit]
+Description=Saplings Pro Django Application
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/app/Backend
+ExecStart=/app/.venv/bin/gunicorn --workers 3 --bind 0.0.0.0:8000 Backend.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
