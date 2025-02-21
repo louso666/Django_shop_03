@@ -14,7 +14,12 @@ urlpatterns = [
 ]
 
 urlpatterns += i18n_patterns(
-    path('', include('store.urls')),  # Ваши основные URL
+  path('admin/', admin.site.urls),
+  path('account/', include('account.urls', namespace='account')),
+  path('cart/', include('cart.urls', namespace='cart')),
+  path('orders/', include('orders.urls', namespace='orders')),
+  path('', include('store.urls', namespace='store')),
+#path('', include('store.urls')),  # Ваши основные URL
 )
 
 if settings.DEBUG:
