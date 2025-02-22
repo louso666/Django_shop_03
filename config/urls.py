@@ -10,16 +10,18 @@ urlpatterns = [
  #path('cart/', include('cart.urls', namespace='cart')),
  # path('orders/', include('orders.urls', namespace='orders')),
  # path('', include('store.urls', namespace='store')),
+  path('blog/', include('blog.urls', namespace='blog')),
   path('i18n/', include('django.conf.urls.i18n')),  # Для смены языка
 ]
 
 urlpatterns += i18n_patterns(
   path('admin/', admin.site.urls),
   path('account/', include('account.urls', namespace='account')),
+#  path('blog/', include('blog.urls', namespace='blog')),
   path('cart/', include('cart.urls', namespace='cart')),
   path('orders/', include('orders.urls', namespace='orders')),
   path('', include('store.urls', namespace='store')),
-  path('blog/', include('blog.urls', namespace='blog')),
+#  path('blog/', include('blog.urls', namespace='blog')),
   path('ckeditor5/', include('django_ckeditor_5.urls')),
 #path('', include('store.urls')),  # Ваши основные URL
 )
