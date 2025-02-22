@@ -29,15 +29,15 @@ msgstr "Заказы"
 
 #: templates/account/profile.html:19
 msgid "Номер заказа"
-msgstr ""
+msgstr "Номер заказа"
 
 #: templates/account/profile.html:20
 msgid "Дата Заказа"
-msgstr ""
+msgstr "Дата Заказа"
 
 #: templates/account/profile.html:44
 msgid "Профиль"
-msgstr ""
+msgstr "Профиль"
 
 #: templates/account/profile.html:47
 msgid "Name:"
@@ -61,11 +61,11 @@ msgstr "Создать учетную запись"
 
 #: templates/account/register.html:17
 msgid "sign in"
-msgstr ""
+msgstr "войти"
 
 #: templates/account/register.html:18
 msgid "if you already have an account"
-msgstr "войти"
+msgstr "если у вас уже есть учетная запись"
 
 #: templates/account/register_done.html:21
 msgid "Welcome"
@@ -77,4 +77,4 @@ msgstr "Ваша учетная запись успешно создана. Те
 
 #: templates/account/register_done.html:22
 msgid "log in"
-msgstr "войти"
+msgstr "Войти"
