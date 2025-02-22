@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-21 14:14+0000\n"
+"POT-Creation-Date: 2025-02-22 10:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,19 +25,19 @@ msgstr "Профиль"
 
 #: templates/account/profile.html:15
 msgid "My Orders"
-msgstr "Заказы"
+msgstr "Мои заказы"
 
 #: templates/account/profile.html:19
-msgid "Номер заказа"
+msgid "Order Number"
 msgstr "Номер заказа"
 
 #: templates/account/profile.html:20
-msgid "Дата Заказа"
+msgid "Order Date"
 msgstr "Дата Заказа"
 
 #: templates/account/profile.html:44
-msgid "Профиль"
-msgstr "Профиль"
+msgid "User Profile"
+msgstr "Профиль пользователя"
 
 #: templates/account/profile.html:47
 msgid "Name:"
@@ -45,7 +45,7 @@ msgstr "Имя:"
 
 #: templates/account/profile.html:51
 msgid "Email:"
-msgstr "Email:"
+msgstr "Почта:"
 
 #: templates/account/profile.html:55
 msgid "Created:"
@@ -53,7 +53,7 @@ msgstr "Создан:"
 
 #: templates/account/profile.html:59
 msgid "Is admin:"
-msgstr "Админ"
+msgstr "Администратор:"
 
 #: templates/account/register.html:14 templates/account/register.html:25
 msgid "Create an account"
@@ -73,8 +73,68 @@ msgstr "Привет"
 
 #: templates/account/register_done.html:22
 msgid "Your account has been successfully created. Now you can "
-msgstr "Ваша учетная запись успешно создана. Теперь вы можете"
+msgstr "Ваша учетная запись успешно создана. Теперь вы можете "
 
 #: templates/account/register_done.html:22
 msgid "log in"
 msgstr "Войти"
+
+#: templates/order/create_order.html:12
+msgid "Checkout"
+msgstr "Проверка"
+
+#: templates/order/create_order.html:18
+msgid "Shipping address"
+msgstr "Адрес доставки"
+
+#: templates/order/create_order.html:21
+msgid "Place order"
+msgstr "Заказать"
+
+#: templates/order/create_order.html:28
+msgid "Order"
+msgstr "Заказ"
+
+#: templates/order/create_order.html:39
+msgid "Order total"
+msgstr "Общее количество заказов"
+
+#: templates/order/order_created.html:9
+msgid "Order created"
+msgstr "Создать заказ"
+
+#: templates/order/order_created.html:27
+msgid "Your order has been successfully placed. The order number is "
+msgstr "Ваш заказ был успешно размещен. Номер заказа указан в "
+
+#: templates/order/order_created.html:29
+msgid "Go to your "
+msgstr "Иди к своему "
+
+#: templates/order/order_created.html:29
+msgid "order history"
+msgstr "история заказов"
+
+#: templates/product/product_list.html:36
+msgid "Details"
+msgstr "Подробнее"
+
+#: templates/product/product_list.html:50
+msgid "Showing page "
+msgstr "Показаны страницы "
+
+#: templates/product/product_list.html:50
+msgid "of"
+msgstr "из"
+
+#: templates/product/product_list.html:57
+msgid "Previous"
+msgstr "Надад"
+
+#: templates/product/product_list.html:61
+msgid "Next"
+msgstr "Далее"
+
+#: templates/product/product_list.html:84
+msgid "There are no products in this category."
+msgstr "В этой категории нет товаров."
